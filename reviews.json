@@ -1,0 +1,26 @@
+[
+    {
+        "image" : "subaruReview.jpg",
+        "name": "SUBARU IMPREZA STI",
+        "rating": 5.0,
+        "comment": "F1R F29 Gold rims, perfect for any Subar out there on the market. Costs around 900$, great for every build!"
+    },
+    {
+        "image": "bmwReview.jpeg",
+        "name": "BMW 760LI",
+        "rating": 5.0,
+        "comment": "AODHAN AH11 Silver rims, 21 alloys, perfect for every limousine. Big massive rim made from brushed aluminium."
+    },
+    {
+        "image": "hondaReview.jpg",
+        "name": "HONDA CR-Z",
+        "rating": 5.0,
+        "comment": "KANSEI ASTRO Hypersilver, this rim is made for every hot hatch out there on the streets. I love it!"
+    },
+    {
+        "image": "accordReview.jpg",
+        "name": "HONDA ACCORD",
+        "rating": 5.0,
+        "comment": "ENKEI TS-5 Black, black shiny rims on my sedan, just perfection! I recommend this to anybody who wants to make it car more beautiful."
+    }
+]

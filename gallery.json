@@ -1,0 +1,32 @@
+[
+    {
+        "type": "ANOVIA",
+        "image": "anovia2.jpg",
+        "alt": "Anovia Rim"
+    },
+    {
+        "type": "AVID1",
+        "image": "avid2.jpg",
+        "alt": "AVID1 Rim"
+    },
+    {
+        "type": "ENKEI",
+        "image": "enkei2.jpg",
+        "alt": "Enkei Rim"
+    },
+    {
+        "type": "KANSEI",
+        "image": "kansei2.jpg",
+        "alt": "Kansei Rim"
+    },
+    {
+        "type": "VORS",
+        "image": "vors1.jpg",
+        "alt": "Vors Rim"
+    },
+    {
+        "type": "BBS",
+        "image": "bbsBronze.jpg",
+        "alt": "BBS Bronze Rim"
+    }
+]

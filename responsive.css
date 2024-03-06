@@ -1,0 +1,30 @@
+@media screen and (max-width: 600px) {
+    :root {
+        --sliderHeight: 45vh;
+    }
+    #logo-container {
+        margin-top: .2rem;
+        padding-bottom: 1rem;
+    }
+    .priceBox {
+        margin: 1rem 0 !important;
+    }
+    .quantityBox {
+        margin-bottom: 1rem !important;
+    }
+    .formContainer {
+        margin-top: 50px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html body .loading-container img {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html body .loading-container img {
+        width: 40%;
+    }
+}

@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap");
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up-animation {
+    animation: fadeUp 1s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* a {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+:root {
+    --sliderHeight: 85vh;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 20px;
+}
+
+html::-webkit-scrollbar-track {
+    background: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.loading-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.loading-container img {
+    width: 20%;
+}
+
+nav #logo-container {
+    padding-top: 1rem;
+    color: red;
+    height: 45px;
+    width: 100px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+nav #logo-container span.crossfader-rail {
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+}
+
+nav #logo-container span.crossfader-slider {
+    position: absolute;
+    left: 20px;
+    width: 5px;
+    height: 40px;
+    -webkit-box-shadow: 0 0 0 5px #000;
+    box-shadow: 0 0 0 5px #000;
+    background-color: #ccc;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
+}
+
+nav #logo-container:hover span.crossfader-slider {
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+}
+
+nav #logo-container .RIMSy {
+    color: black;
+    text-transform: lowercase;
+}
+
+nav #visible-links li a {
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+    border-bottom: 5px solid rgba(0, 128, 128, 0);
+}
+
+nav #visible-links li:hover a {
+    border-bottom: 5px solid red;
+    background: none;
+}
+
+.quote-border {
+    border-left-color: red !important;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main #slider {
+    width: 100vw;
+    height: var(--sliderHeight);
+    overflow: hidden;
+}
+
+main #slider .slides {
+    display: block;
+    width: 600vw;
+    height: var(--sliderHeight);
+    margin: 0;
+    padding: 0;
+}
+
+main #slider .slides .slide {
+    float: left;
+    list-style-type: none;
+    width: 100vw;
+    height: var(--sliderHeight);
+}
+
+main #slider .slides .slide img {
+    width: 100vw;
+    height: var(--sliderHeight);
+}
+
+main .cross-section {
+    width: 100%;
+    height: 25vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 15%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 15%, 0 100%);
+    background-color: #eeeeee;
+}
+
+main .opposite {
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 100% 15%);
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 100% 15%);
+}
+
+main .card-textContent {
+    font-size: 1.15rem !important;
+}
+
+main #biography-section {
+    margin-top: 100px !important;
+}
+
+main #product-item a img {
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+main #product-item a:hover img {
+    -webkit-transform: scale(105%);
+    transform: scale(105%);
+}
+
+main .tabs .indicator {
+    background-color: red !important;
+}
+
+main .tabs .tab a:hover {
+    cursor: pointer;
+}
+
+main .tabs .tab a:focus {
+    background-color: red !important;
+}
+
+main .tabs .tab a:focus .active {
+    background-color: red !important;
+}
+
+main .resize img {
+    width: 100% !important;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+main .resize img:hover {
+    -webkit-transform: scale(105%);
+    transform: scale(105%);
+}
+
+main #price {
+    font-size: 1rem !important;
+}
+
+main .margin-top {
+    margin-top: 3rem !important;
+}
+
+main .underline {
+    border-bottom: 2px solid red;
+    padding-bottom: 5px !important;
+}
+
+main .community-text {
+    font-weight: 200 !important;
+}
+
+main .pointer {
+    cursor: pointer;
+}
+
+main .resize-card {
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+main .resize-card:hover {
+    -webkit-transform: scale(103%);
+    transform: scale(103%);
+}
+
+main iframe {
+    border: 0;
+    width: 100%;
+    height: 500px;
+}
+
+main .textarea {
+    width: 100%;
+    height: 180px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #b4b4b4;
+    padding: 10px;
+    resize: none;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+main .textarea:focus {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid red;
+}
+
+main .fail {
+    border-bottom-color: red !important;
+}
+
+main .pass {
+    border-bottom-color: red !important;
+}
+
+main label {
+    font-size: 16px !important;
+}
+
+main label::after {
+    margin-left: 7px;
+    content: attr(data-important);
+    color: red;
+    font-size: 1.3rem;
+}
+
+main .input-field input[type="text"]:focus {
+    border-bottom: 1px solid red !important;
+    box-shadow: none !important;
+}
+
+main #product-search:focus {
+    outline: none;
+    border-bottom: 2px solid red !important; 
+    box-shadow: none !important;
+}
+
+main .dropdown-content li>span {
+    font-size: 16px;
+    color: red;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+    border: 1px solid red;
+}
+
+main .btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: red;
+}
+
+main .btn, .btn-large, .btn-small {
+    background-color: red;
+}
+
+
+/* Korpa. */
+.cart-container h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.cart-container .listCart {
+    margin-top: 20px;
+    max-height: calc(100% - 150px); 
+    overflow-y: auto; 
+}
+
+.cart-container .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: lightgray;
+}
+
+.cart-container .btn button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-container .btn button:hover {
+    background-color: #555;
+}
+
+.empty-cart-message {
+    padding: 60px;
+}
+
+.empty-cart-message p {
+    font-size: 20px;
+}
+
+.empty-cart-message a {
+    color: red;
+    font-weight: bold;
+}
+
+.btn-small {
+    margin-left: 12px;
+}
+
+#cart-summary {
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+#totalPrice {
+    color: green;
+}
+
+#totalQuantity {
+    color: red;
+}
+
+.cart-item-count {
+    margin-left: 4px;
+    background-color: red;
+    color: white;
+    border-radius: 30%;
+    padding: 2px 4px;
+    font-size: 11px;
+}
+
+.cart-icon {
+    font-size: 21px;
+    margin-top: -15px;
+}

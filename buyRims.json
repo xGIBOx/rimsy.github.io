@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "image": "anovia1.jpg",
+        "title": "ANOVIA ELDER BRUSHED",
+        "description": "18X9.5 +35MM",
+        "className": "anovia",
+        "price": 1080.00
+    },
+    {
+        "id": 2,
+        "image": "anovia2.jpg",
+        "title": "ANOVIA KINETIC RODIN",
+        "description": "18X9.5 +38MM",
+        "className": "anovia",
+        "price": 1080.00
+    },
+    {
+        "id": 3,
+        "image": "anovia3.jpg",
+        "title": "ANOVIA ELDER RAVEN",
+        "description": "18X9.5 +22MM",
+        "className": "anovia",
+        "price": 1026.00
+    },
+    {
+        "id": 4,
+        "image": "avid1.jpg",
+        "title": "AVID1 AV6 BRONZE",
+        "description": "18X9.5 +38MM",
+        "className": "avid1",
+        "price": 864.56
+    },
+    {
+        "id": 5,
+        "image": "avid2.jpg",
+        "title": "AVID1 AV20 BRONZE",
+        "description": "18X9.5 +38MM",
+        "className": "avid1",
+        "price": 864.56
+    },
+    {
+        "id": 6,
+        "image": "avid3.jpg",
+        "title": "AVID1 AV6 GLOSS BLACK",
+        "description": "17X8 +35MM",
+        "className": "avid1",
+        "price": 758.44
+    },
+    {
+        "id": 7,
+        "image": "enkei1.jpg",
+        "title": "ENKEI TSV BRONZE",
+        "description": "18X9.5 +38MM",
+        "className": "enkei",
+        "price": 1075.08
+    },
+    {
+        "id": 8,
+        "image": "enkei2.jpg",
+        "title": "ENKEI TS-5 BLACK",
+        "description": "18X9.5 +38MM",
+        "className": "enkei",
+        "price": 1019.40
+    },
+    {
+        "id": 9,
+        "image": "enkei3.jpg",
+        "title": "ENKEI RPF1 SILVER",
+        "description": "18X9.5 +38MM",
+        "className": "enkei",
+        "price": 1537.20
+    },
+    {
+        "id": 10,
+        "image": "kansei1.jpg",
+        "title": "KANSEI TANDEM GRAY",
+        "description": "18X9.5 +22MM",
+        "className": "kansei",
+        "price": 1440.00
+    },
+    {
+        "id": 11,
+        "image": "kansei2.jpg",
+        "title": "KANSEI ASTRO GRAY",
+        "description": "19X9.5 +22MM",
+        "className": "kansei",
+        "price": 1380.00
+    },
+    {
+        "id": 12,
+        "image": "kansei3.jpg",
+        "title": "KANSEI ROKU GRAY",
+        "description": "18X9.5 +22MM",
+        "className": "kansei",
+        "price": 1340.00
+    },
+    {
+        "id": 13,
+        "image": "vors1.jpg",
+        "title": "VORS TR4 BLACK",
+        "description": "19X9.5 +35MM",
+        "className": "vors",
+        "price": 870.92
+    },
+    {
+        "id": 14,
+        "image": "vors2.jpg",
+        "title": "VORS TR6 BRONZE",
+        "description": "15X8 +20MM",
+        "className": "vors",
+        "price": 558.88
+    },
+    {
+        "id": 15,
+        "image": "vors3.jpg",
+        "title": "VORS TR4 SILVER",
+        "description": "18X8.5 +35MM",
+        "className": "vors",
+        "price": 785.08
+    }
+]

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+	<channel>
+		<item>
+			<title>RIMSy</title>
+			<link>https://rimsy.000webhostapp.com/index.html</link>
+			<description>Be informed about all the news that comes out on the site!</description>
+		</item>
+		<item>
+			<title>Rims</title>
+			<link>https://rimsy.000webhostapp.com/rims.html</link>
+			<description>We added few new exotic models!</description>
+		</item>
+		<item>
+			<title>Suppliers</title>
+			<link>https://rimsy.000webhostapp.com/suppliers.html</link>
+			<description>Check out our new suppliers.</description>
+		</item>
+		<item>
+			<title>Prices</title>
+			<link>https://rimsy.000webhostapp.com/prices.html</link>
+			<description>Big Christmas discount arrived! Check it out!</description>
+		</item>
+		<item>
+			<title>Support</title>
+			<link>https://rimsy.000webhostapp.com/support.html</link>
+			<description>We added new way to make a ticket.</description>
+		</item>
+	</channel>
+</rss>
+
+

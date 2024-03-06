@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+    <html lang="en">
+            <head>
+                <meta name="author" content="Bogdan Živković 247-23" />
+
+                <!-- Potrebne stvarcice. -->
+                <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection" />
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+                <!-- Spajanja. -->
+                <link rel="icon" href="images/logo.png" />
+                <link rel="stylesheet" href="style.css" type="text/css"/>
+                <link rel="stylesheet" href="responsive.css" type="text/css" />
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+                <!-- Animacije. -->
+                <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+                <!-- Kontent. -->
+                <meta name="description" content="We sell and repair car rims." />
+                <meta name="keywords" content="Rims, selling, repairing, Enkei, Kansei, Anovia, Vors, AVID1, BBS, Aodhan, Konig, Touren, F1R, MST, XXR, Heritage, Motegi, OHM, Dub, Azara, Work." />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <script src="script.js" defer></script>
+
+                <title>RIMSy</title>
+            </head>
+            <body>
+
+                <!-- Ucitavanje stranice. -->
+                <div class="loading-container">
+                    <img class="loading-image" src="images/preload.gif" alt="Preloader Rim" />
+                </div>
+
+                <!-- Res. nav meni.  -->
+                <header class="navbar-fixed">
+                    <nav class="white">
+                        <div class="container">
+                            <div class="nav-wrapper">
+                                <a id="logo-container" class="brand-logo" href="index.html">rims<span class="RIMSy">y</span></a>
+                                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+                                <ul id="visible-links" class="right hide-on-med-and-down navLinks">
+                                    <!-- Nastavak ubacen kroz JS. -->
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+
+                <ul class="sidenav sideNavCollapsed" id="mobile-nav">
+                    <!-- Skriveni NAV-bar. Unos kroz JS. -->
+                </ul>
+                <main>
+                    <div class="center-align">
+                        <h1>SHOPPING CART</h1>
+                        <hr style="width: 70%;">
+                    </div>
+                    <div id="cart" class="row my-5">
+                        <!-- Artikli u korpi će biti prikazani ovde. -->
+                    </div>
+                    <hr style="width: 70%";>
+                    <div id="cart-summary" class="center-align">
+                        <button id="buyBtn" class="btn-large">Buy Now</button>
+                        <div id="cart-info" style="margin-top: 10px;">
+                            Total Quantity: <span id="totalQuantity">0</span> SET OF 4<br>
+                            Total Price: <span id="totalPrice">0.00</span> USD
+                        </div>
+                    </div>
+                </main>
+
+            <a href="#"><i class="fab fa-home"></i></a>
+            <!-- FOOTER -->
+                <footer class="page-footer grey darken-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12 m3 l3 left-on-med-and-up center-on-small-only">
+                                <h2 class="white-text flow-text">RIMS<span class="red-text">y</span></h2>
+                                <!-- Info ubacen kroz JS. -->
+                                <ul class="store-info">
+                                    
+                                </ul>
+                            </div>
+                            <div class="col s12 m6 l6 center-align">
+                                <div class="row">
+                                    <h2 class="flow-text">"Appreciate &#38; Celebrate"</h2>
+                                    <a><i class="red-text fab fa-instagram small"></i></a>
+                                    <a><i class="red-text fab fa-facebook-f small"></i></a>
+                                    <a><i class="red-text fab fa-youtube small"></i></a>
+                                    <a href="rss.xml"><i class="red-text fas fa-rss-square small"></i></a>
+                                    <a href="sitemap.xml" target="_blank"><i class="red-text fa fa-sitemap"></i></a>
+                                </div>
+                                <div class="row">
+                                    <div class="col s6 m6 l6 offset-s3 offset-m3 offset-l3">
+                                        <img src="images/payment.jpg" alt="Payment methods" class="responsive-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m3 l3 left-on-med-and-up center-on-small-only">
+                                <h2 class="white-text flow-text">COMPANY</h2>
+                                <!-- Company info ubacen kroz JS. -->
+                                <ul class="company-info">
+                            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copyright grey darken-4">
+                        <div class="container" style="margin-top: 5px;">
+                            Copyright &copy; Bogdan Živković 2024. All Rights Reserved.
+                            <a class="grey-text text-lighten-4 right" target="_blank" href="documentation.pdf"><i class="red-text small far fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </footer>
+            <!-- Kraj FOOTER-ra. -->
+
+            <div class="fixed-action-btn">
+                <button id="toTopBtn"  class="btn-large red btn-floating waves-effect waves-light scale-transition scale-out">
+                    <i class="large material-icons">keyboard_arrow_up</i>
+                </button>
+            </div>
+
+            <!-- JQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- JavaScript -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <!-- AOS -->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        </body>
+    </html>

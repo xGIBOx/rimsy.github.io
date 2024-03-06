@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+@import "./variables";
+
+* {
+    box-sizing: border-box;
+    a {
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+:root {
+    --sliderHeight: 85vh;
+}
+
+html {
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.568);
+        border-radius: 20px;
+    }
+    &::-webkit-scrollbar-track {
+        background: none;
+    }
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif !important;
+    body {
+        overflow-x: hidden;
+        .loading-container {
+            width: 100%;
+            height: 100vh;
+            background-color: #fff;
+            @include flexProperty(row, center,center);
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            img {
+                width: 20%;
+            }
+        }
+        header {
+            nav {
+                #logo-container {
+                    padding-top: 1rem;
+                    height: 50px;
+                    width: 100px;
+                    cursor: pointer;
+                    @include flexProperty(row, center, center);
+                    span.crossfader-rail {
+                        width: 100%;
+                        height: 5px;
+                        background-color: #000;
+                    }
+                    span.crossfader-slider {
+                        position: absolute;
+                        left: 20px;
+                        width: 5px;
+                        height: 40px;
+                        box-shadow: 0 0 0 5px #000;
+                        background-color: #ccc; 
+                        transition: 500ms ease;
+                    }
+                    &:hover span.crossfader-slider {
+                        transform: translateX(60px);
+                    }
+                }
+                #visible-links {
+                    li {
+                        a {
+                            transition: 300ms ease;
+                            border-bottom: 5px solid rgba(0, 128, 128, 0);
+                        }
+                        &:hover a {
+                            border-bottom: 5px solid red;
+                            background: none;
+                        }
+                    }
+                }
+            }
+        }
+        .quote-border {
+            border-left-color: red !important;
+        }
+        main {
+            width: 100%;
+            margin: 0 auto;
+            #slider {
+                width: 100vw;
+                height: var(--sliderHeight);
+                overflow: hidden;
+                .slides {
+                    display: block;
+                    width: 600vw;
+                    height: var(--sliderHeight);
+                    margin: 0;
+                    padding: 0;
+                    .slide {
+                        float: left;
+                        list-style-type: none;
+                        width: 100vw;
+                        height: var(--sliderHeight);
+                        img {
+                            width: 100vw;
+                            height: var(--sliderHeight);
+                        }
+                    }
+                }
+            }
+            .cross-section {
+                width: 100%;
+                height: 25vh;
+                clip-path: polygon(0 0, 100% 0, 100% 15% , 0 100%);
+                background-color: #eeeeee;
+            }
+            .opposite {
+                clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 100% 15%);
+            }
+            .card-textContent {
+                font-size: 1.15rem !important;
+            }
+            #biography-section {
+                margin-top: 100px !important;
+            }
+            #product-item {
+                a {
+                    img {
+                        transition: all 300ms ease;
+                    }
+                    &:hover img {
+                        transform: scale(105%);
+                    }
+                }
+            }
+            .tabs {
+                .indicator {
+                    background-color: red !important;
+                }
+                .tab {
+                    a {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        &:focus {
+                            background-color: red !important;
+                        }
+                        &:focus .active {
+                            background-color: red !important;
+                        }
+                    }
+                }
+            }
+            .resize {
+                img {
+                    width: 100% !important;
+                    transition: all 300ms ease;
+                    &:hover {
+                        transform: scale(105%);
+                    } 
+                }
+            }
+            #price {
+                font-size: 1rem !important;
+            }
+            .margin-top {
+                margin-top: 3rem !important;
+            }
+            .underline {
+                border-bottom: 2px solid red;
+                padding-bottom: 5px !important;
+            }
+            .community-text {
+                font-weight: 200 !important;
+            }
+            .pointer {
+                cursor: pointer;
+            }
+            .resize-card {
+                transition: all 300ms ease;
+                &:hover {
+                    transform: scale(103%);
+                }
+            }
+            iframe {
+                border: 0;
+                width: 100%;
+                height: 500px;
+            }
+            .textarea {
+                width: 100%;
+                height: 180px;
+                border: 0;
+                outline: 0;
+                border-bottom: 1px solid rgb(180, 180, 180);
+                padding: 10px;
+                resize: none;
+                transition: all 300ms ease;
+                &:focus {
+                    border: 0;
+                    outline: 0;
+                    border-bottom: 1px solid red !important;
+                }
+            }
+            .fail {
+                border-bottom-color: darkred !important;
+            }
+            .pass {
+                border-bottom-color: red !important;
+            }
+            label {
+                font-size: 16px !important; 
+            }
+            label::after{
+                margin-left: 7px;
+                content: attr(data-important);
+                color: darkred;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+
+

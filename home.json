@@ -1,0 +1,38 @@
+[
+    {
+        "imageSource": "bbsMain.jpg",
+        "altName": "New collection of BBS rims",
+        "cardTitle": "BBS striking again",
+        "cardText": "BBS strikes again with the latest collection of rims for different tastes and vehicles, something for everyone. A wide range of beautiful rims made of refined machined aluminum. There is no car on which I would not look good."
+    },
+    {
+        "imageSource": "anoviaMain.jpg",
+        "altName": "New Anovia fitment for exotic cars",
+        "cardTitle": "ANOVIA elegance",
+        "cardText": "Anovia has launched a collection of aluminum and carbon alloy rims, specially designed for most exotic vehicles. A beautiful design that charms them as well as the lightness of the rim, which weighs less than 2.3 kilograms! Take a look and see how they fit."
+    },
+    {
+        "imageSource": "repairMain.jpeg",
+        "altName": "Take a look inside our garage for repairing rims",
+        "cardTitle": "Repairing rims",
+        "cardText": "Take a peek into the rooms of our garage where the magic of straightening and repairing rims is performed. The magic performed by our masters is rare in the world. They correct and repair the impossible, see for yourself. We also make customized rims according to your wishes."
+    },
+    {
+        "imageSource": "audiMain.jpg",
+        "altName": "New Vossen rims special made for Audi RS6-7 ABT",
+        "cardTitle": "VOSSEN x ABT",
+        "cardText": "Vossen in cooperation with Audi and ABT. The latest rims made of carbon fiber specially for the RS6/RS7 model series from ABT. The rims are an incredible 22 inches and weigh just over 2 kilograms! People from ABT announce that they will not stop here, but that Vossen will appear on other models as well!"
+    },
+    {
+        "imageSource": "vossenMain.jpg",
+        "altName": "The most expensive Vossen carbon rims",
+        "cardTitle": "Vossen anniversary",
+        "cardText": "Vossen makes amazing things as usual. This week they released their most expensive rim, which costs as much as $40,000! The rim is called Vossen VLE-1 and it is made only for special members who cooperate with them for many years."
+    },
+    {
+        "imageSource": "wheelsMain.jpg",
+        "altName": "New collection of OEM rims",
+        "cardTitle": "Bunch of OEM things",
+        "cardText": "You might have thought that we only deal with aftermarket rims, but you would be wrong! We also sell and order factory rims from all types of vehicles and different sizes. Check below for more information on availability and locations."
+    }
+]
